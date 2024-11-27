@@ -6,11 +6,22 @@
     <title>Halaman Login</title>
 </head>
 <body>
-    <h1>Halaman Login</h1>
+    <h1>Halaman<br>Login</h1>
     <form action="./dashboard.html" method="POST">
-        <input type="email" name="email" id="email" placeholder="Email"/>
-        <input type="password" name="password" id="password" placeholder="Password"/>
-        <button type="submit">Login</button>
+        <body style="font-family: Arial, sans-serif; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+            <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 300px;">
+                <h2 style="text-align: center; color: #333;">Login</h2>
+                <form>
+                    <label for="username" style="display: block; margin-bottom: 8px; color: #555;">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" 
+                           style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+        
+                    <label for="password" style="display: block; margin-bottom: 8px; color: #555;">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" 
+                           style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+        
+                    <button type="submit" 
+                            style="width: 100%; padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;"> Login</button>
     </form>    
 </body>
 </html>
