@@ -1,7 +1,7 @@
 <?php
 session_start();
-if ($_SESSION['role'] != 'user') {
-    echo "<div class='alert alert-danger'>Anda bukan role user</div>";
+if ($_SESSION['role'] != 'admin') {
+    echo "<div class='alert alert-danger'>Anda bukan role admin</div>";
     header('Location:index.php');
     exit; // Tambahkan exit agar header tidak dieksekusi setelah echo
 }
@@ -12,7 +12,7 @@ if ($_SESSION['role'] != 'user') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman User</title>
+    <title>Halaman Admin</title>
     <!-- Tambahkan link CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
